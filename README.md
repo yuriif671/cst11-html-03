@@ -1,62 +1,31 @@
-# Introduction to HTML Editing with Github
+# Defining Styles
 
-Github is a full IDE (Integrated Development Environment) and it can be used for coding a variety of programming languages.  In addition, we can use it to create pages in HTML.  Before we begin, we will need to install a few extensions to help us out
+We have looked at Inline Styles, where the style is defined inside an HTML Tag.  A better approach to use an *embedded* style, where the style is included in a style tag.
 
-# Extensions
-Open up the *Extensions* from the activity bar. This functions like the Google Chrome Extension marketplace where you can add extensions to customize VSC or add functionality for specific languages.
-We will be installing the following extensions for use with this unit on HTML:
-1. Beautify
-2. Preview in browser
-3. Live Server
+Open the page1.html document and see how this can be used.
 
-Note that every extension has settings that you should review when you are installing them to make sure that they are correct for you.  Preview in browser, for example needs to have the correct browser (or default browser) identifed
+* A tag can include multiple styles. They are separated by a space
+* Multiple styles can be defined in the style tag, they are separated by a comma
+* A class is defined with a dot (.) followed by the name of the class
+* A class definition can be assigned to a specific tag, but can be a global class
+* An ID is defined with a hashtag (#) followed by the name of the id
+* An ID can be assigned to a specific element, but ID's should be unique
 
-# Beautify
-Source code is the stuff you type in to make something work.  We will consider even the stuff you need to make html documents work as source code.  Often source code is very difficult to read, but by organizing the contents, it is often easier to understand.
+# What is the difference between an ID and a Class?
 
-```
-Once you have installed the extensions, open the "page1.html" document.
-Use F1 to show all available commands, and type "beautify"
-Your code should be more nicely organized!
-There are numerous extensions that will do something similar, and several that will work for other tasks
-```
- **When you look at the page1.html document, you will notice many words that are included within the <> symbols.  These are used to denote markup tags in HTML**
+An ID is intended for unique elements on the page. Think about a button that does a task, like a Save Button.  You only have 1 Save button on a page.
+A Class is a reusable style.  Maybe you have a roster for a team, and all of the Tanks need to have one style, and all the Smashers need to have another style.
 
-# HTML (Hypertext Markup Language)
-HTML is not really a computer programming language, but it is a way of "marking up" content and flag it for 'formatting'. You might consider looking up LaTEX, which was for typesetting documents before modern computing.
+# Positioning
 
-Discord incorporates elements from a markup language called *Markdown* to format text in posts.
-https://www.markdownguide.org/tools/discord/
+You can put multiple sections on a page, kind of like using text boxes in Microsoft Word.  We use the position style.  Today we will look at the most basic position: absolute
 
-Github has its own formatting language that can be used in its README.md files
-https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+This creates floating elements in the page, where you set the position in pixels from the top/left of the page, and you set the width and the height.
+Look at page2.html for an example.
+
+How do you put one element in front of another if they overlap? Z-index
 
 
- HTML uses *tags* to identify sections of text to be marked up.  These use beginning tags and ending tags.  We sometimes call these "container" tags, because the text to be formatted is contained between the beginning and ending.
+## Assignment
 
- ```
- Read about HTML elements/tags at https://www.w3schools.com/html/html_intro.asp
- In particular, pay attention to the following sections:
- HTML Basic - for the structure (similar to what we have in page1.html)
- HTML Elements - to learn about nesting HTML elements and the end tags
- HTML Attributes - to find out about adding more detail to a tag
- HTML Formatting - to learn about some of the early formatting tags
- HTML Images - to learn about how to add a picture to a webpage
- 
- Visit: https://www.techonthenet.com/html/elements/font_tag.php to learn about the font tag
-
- Note: The font tag is really old technology that has since been replaced by styles. We will be looking at styles a bit later, but this provides some context for where HTML used to be and why styles has gradually become the new standard for formatting html
-
- We will also look at HTML Tables a bit later, but these give us enough to get started
- ```
-
-It is a good idea to include all the resouces (including graphics files) that you will need in your working directory.  We have included some that you can use for today's assignment.
-blackfoot.jpg
-napi.jpg
-unnamed.jpg
-
-Assignment:
-Use basic formatting tags to modify the napi.html story to make it more interesting to look at.  You can experiment with several of the different tags.
-You should have paragraphs, different colors and formatting, as well as headings.  You should use the img tag to include the images that have been provided.
-You must include examples of nested tags as well.
-
+Style the document called document1.html using embedded Styles.  Use layouts to make the page look better. Work in full screen mode so we don't have to worry about cropping the page. You will need to add all the proper elements to make this a proper html document.
