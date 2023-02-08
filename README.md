@@ -1,5 +1,10 @@
 # Defining Styles
 
+## Objectives
+* create an embedded style
+* create class or html tag selectors that can be used to apply a style across a document
+* use the position, top, left, width, and height styles to create an html block and place it on the html document
+
 We have looked at Inline Styles, where the style is defined inside an HTML Tag.  A better approach to use an *embedded* style, where the style is included in a style tag.
 
 Open the page1.html document and see how this can be used.
@@ -23,7 +28,9 @@ You can put multiple sections on a page, kind of like using text boxes in Micros
 This creates floating elements in the page, where you set the position in pixels from the top/left of the page, and you set the width and the height.
 Look at page2.html for an example.
 
-How do you put one element in front of another if they overlap? Z-index
+A page can be imagined as being a coordinate plane, except the (0,0) coordinate is at the top left of the page, but the first number shows the horizontal (x) coordinate and the second shows the vertical (y) coordinate. We can use these coordinates to move blocks of html around the document by using the *position* style along with the *top* and *left* styles.  We can use these styles to create a "text box" or a page within the page.  This block or box can have its own html that is separate from the rest of the page.
+
+How do you put one element/block in front of another if they overlap? Z-index is the style that determines order on a page.  Higher numbers are placed on top of lower numbers!
 
 
 ## Assignment
